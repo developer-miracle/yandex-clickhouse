@@ -1,0 +1,68 @@
+{
+    "packages": [
+        {
+            "name": "smi2/phpclickhouse",
+            "version": "1.5.3",
+            "version_normalized": "1.5.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/smi2/phpClickHouse.git",
+                "reference": "66128bf187755d617fce23076b1c9aca2a2cb64e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/smi2/phpClickHouse/zipball/66128bf187755d617fce23076b1c9aca2a2cb64e",
+                "reference": "66128bf187755d617fce23076b1c9aca2a2cb64e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^8.2",
+                "phpstan/phpstan": "^0.12",
+                "phpunit/phpunit": "^9.5",
+                "sebastian/comparator": "^4.0"
+            },
+            "time": "2024-01-18T11:08:36+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "ClickHouseDB\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Igor Strykhar",
+                    "email": "isublimity@gmail.com",
+                    "homepage": "https://github.com/isublimity"
+                }
+            ],
+            "description": "PHP ClickHouse Client",
+            "homepage": "https://github.com/smi2/phpClickHouse",
+            "keywords": [
+                "clickhouse",
+                "client",
+                "curl",
+                "driver",
+                "http",
+                "http client",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/smi2/phpClickHouse/issues",
+                "source": "https://github.com/smi2/phpClickHouse/tree/1.5.3"
+            },
+            "install-path": "../smi2/phpclickhouse"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}
