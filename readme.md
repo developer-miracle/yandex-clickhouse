@@ -30,11 +30,23 @@
 Создание БД clickhouse с нужными полями
 
     CREATE TABLE YandexMetrika (
-        id UInt32 PRIMARY KEY,
-        date String,
+        visitID UInt32 PRIMARY KEY,
+        dateTime String,
+        lastTrafficSource String,
         pageViews String,
         goalsId String,
-        isNewUser String
+        isNewUser String,
+        bounce String,
+        visitDuration String,
+        regionCountry String,
+        regionCity String,
+        startURL String,
+        endURL String,
+        counterUserIDHash String,
+        browser String,
+        purchaseID String,
+        purchaseProductQuantity String,
+        purchaseRevenue String
     ) ENGINE = MergeTree() 
 
 ---------------------------------------------------------
@@ -44,11 +56,23 @@
     "token": "",
     "counter_id": "",
     "visits_fields": {
-        "ym:s:visitID": "id",
-        "ym:s:date": "date",
+        "ym:s:visitID": "visitID",
+        "ym:s:dateTime": "dateTime",
+        "ym:s:lastTrafficSource": "lastTrafficSource",
         "ym:s:pageViews": "pageViews",
         "ym:s:goalsID": "goalsId",
-        "ym:s:isNewUser": "isNewUser"
+        "ym:s:isNewUser": "isNewUser",
+        "ym:s:bounce": "bounce",
+        "ym:s:visitDuration": "visitDuration",
+        "ym:s:regionCountry": "regionCountry",
+        "ym:s:regionCity": "regionCity",
+        "ym:s:startURL": "startURL",
+        "ym:s:endURL": "endURL",
+        "ym:s:counterUserIDHash": "counterUserIDHash",
+        "ym:s:browser": "browser",
+        "ym:s:purchaseID": "purchaseID",
+        "ym:s:purchaseProductQuantity": "purchaseProductQuantity",
+        "ym:s:purchaseRevenue": "purchaseRevenue"
     },
     "log_level": "INFO",
     "max_attempts": 40,
